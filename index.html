@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Advanced Flappy Plane</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <section class="hud">
+        <h1>Advanced Flappy Plane</h1>
+        <div class="indicators">
+          <span id="score">Score: 0</span>
+          <span id="best-score">Best: 0</span>
+          <span id="powerup">Power-up: None</span>
+        </div>
+        <div class="controls">
+          <button id="start-btn" type="button">Start</button>
+          <button id="pause-btn" type="button" disabled>Pause</button>
+          <button id="resume-btn" type="button" disabled>Resume</button>
+        </div>
+        <p class="tip">Space, click or tap to flap. P to pause, R to resume.</p>
+      </section>
+      <section class="game-area">
+        <canvas id="game" width="480" height="720" aria-label="Flappy plane game canvas"></canvas>
+        <div id="overlay" class="overlay hidden" role="status" aria-live="polite"></div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Built as a modern twist on the classic Flappy Bird. Features parallax
+        backgrounds, dynamic obstacles, power-ups and persistent scoring.
+      </p>
+    </footer>
+    <script src="game.js" type="module"></script>
+  </body>
+</html>
